@@ -1,0 +1,315 @@
+* {
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: cursive;
+    color: white;
+}
+
+
+
+body {
+    background-image: url(../../Assets/pngtree-food-western-food-steak-tomato-image_25128.jpg);
+    background-position: 22% 80%;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+
+
+}
+
+.navbar {
+    background-color: #000053;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.navbar ul li a {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+.card {
+    box-shadow: 4px 6px 9px -2px rgba(116, 94, 138, 0.64);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+nav a {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+nav a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.card {
+    width: 100%;
+    border-radius: 20px;
+    height: 80%;
+    transition-property: transform;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    box-shadow: 10px 8px 16px -1px rgba(100,100,100,0.75);
+}
+
+.card:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(77, 76, 76);
+    /* width: 98%; */
+    transform: scale(1.006);
+}
+
+.card-body {
+    background-color: #1b1a1a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap');
+
+
+
+.containerr .carda {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.containerr .carda:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1BBFE9;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.containerr .carda:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.containerr .carda:after {
+    content: "Nike";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+
+.containerr .carda .imgBx {
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.containerr .carda:hover .imgBx {
+    top: 0%;
+    transform: translateY(-25%);
+    /* bug  */
+}
+
+.containerr .carda .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    width: 270px;
+    border-radius: 50%;
+}
+
+.containerr .carda .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
+}
+
+.containerr .carda:hover .contentBx {
+    height: 210px;
+}
+
+.containerr .carda .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.containerr .carda .contentBx .size,
+.containerr .carda .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.containerr .carda:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+.containerr .carda:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+.containerr .carda .contentBx .size h3,
+.containerr .carda .contentBx .color h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.containerr .carda .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: .5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.containerr .carda .contentBx .size span:hover {  /* other bug */
+    background: #B90000;
+}
+
+.containerr .carda .contentBx .color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.containerr .carda .contentBx .color span:nth-child(2) {
+     background: #1BBFE9;
+}
+
+.containerr .carda .contentBx .color span:nth-child(3) {
+     background: #1B2FE9;
+}
+
+.containerr .carda .contentBx .color span:nth-child(4) {
+     background: #080481;
+}
+
+.containerr .carda .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .5s;
+}
+
+.containerr .carda:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: .7s;
+} 
