@@ -62,12 +62,11 @@ body{
     body{
         background-position: 70% 70%;    
         height: 100vh;
-
     }
     .container{
        background-color: rgba(26, 35, 35, 0.856);
         width: 80%;
-        height: 70vh;
+        height: 100vh;
         margin-left: 20px;
     }
     
