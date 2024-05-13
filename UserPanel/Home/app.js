@@ -8,7 +8,7 @@ async function getCategories() {
             for (const data in categories) {
                 categoriesCard.innerHTML += `
                 <div class = "col-lg-4 col-md-6 col-sm-6 col-12">              
-                <div class="containerr">
+                <div class="containerr" data-aos="flip-left">
                 <div class="carda mt-3">
                     <div class="imgBx">
                     <img src=${categories[data]["cateImage"]} class = "img-fluid rounded-top">
